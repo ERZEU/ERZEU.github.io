@@ -12,15 +12,11 @@ btn.addEventListener("click", function(){
     firstname = document.getElementById("firstname");
     lastname = document.getElementById("lastname");
     email = document.getElementById("email");
-    tg.close();
-});
-
-let data = {
-    fname: firstname,
-    lname: lastname,
-    mail: email
-}
-
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+    let data = {
+        fname: firstname,
+        lname: lastname,
+        mail: email
+    }
     tg.sendData(JSON.stringify(data));
+    tg.close();
 });
