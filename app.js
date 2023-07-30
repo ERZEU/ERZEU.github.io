@@ -13,7 +13,7 @@ btn.addEventListener("click", function(){
         firstname: firstname,
         lastname: lastname,
         email: email,
-        file: file
+        file: file.name
     };
     tg.sendData(JSON.stringify(data));
     tg.close();
