@@ -14,5 +14,6 @@ btn.addEventListener("click", function(){
         lastname: lastname,
         email: email
     };
+    tg.sendData(JSON.stringify(data));
     tg.close();
 });
