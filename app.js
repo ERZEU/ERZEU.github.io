@@ -9,9 +9,10 @@ btn.addEventListener("click", function(){
     let firstname = document.getElementById("firstname");
     let lastname = document.getElementById("lastname");
     let email = document.getElementById("email");
+    let file = document.getElementById("file");
     let data = {
-        fname: firstname,
-        lname: lastname,
+        firstname: firstname,
+        lastname: lastname,
         mail: email,
         file: file
     }
